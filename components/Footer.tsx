@@ -9,9 +9,11 @@ const Footer: React.FC = () => {
       <div className="container mx-auto px-6">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-20">
           <div className="space-y-6">
-            <span className="text-3xl font-black text-white leading-none tracking-tighter font-display">
-              MG<span className="text-mg-red">SELECTION</span>
-            </span>
+            <img
+              src={COMPANY_INFO.logo}
+              alt={COMPANY_INFO.name}
+              className="h-16 w-auto object-contain mb-4"
+            />
             <p className="text-gray-400 font-light text-sm">
               {COMPANY_INFO.description}
             </p>

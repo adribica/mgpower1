@@ -1,5 +1,6 @@
 
 import React, { useState, useEffect } from 'react';
+import { COMPANY_INFO } from '../constants';
 
 const Header: React.FC = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -35,21 +36,18 @@ const Header: React.FC = () => {
   return (
     <header
       className={`fixed top-0 left-0 w-full z-[1000] transition-all duration-500 ${isScrolled || isMobileMenuOpen
-          ? 'bg-mg-black/95 backdrop-blur-lg py-4 border-b border-white/5 shadow-2xl'
-          : 'bg-transparent py-8'
+        ? 'bg-mg-black/95 backdrop-blur-lg py-4 border-b border-white/5 shadow-2xl'
+        : 'bg-transparent py-8'
         }`}
     >
       <div className="container mx-auto px-6 flex items-center justify-between">
         {/* Logo */}
         <a href="#/" className="flex items-center space-x-2 relative z-[1005]">
-          <div className="flex flex-col">
-            <span className="text-2xl font-black leading-none tracking-tighter font-display text-white">
-              MG<span className="text-mg-red">POWER</span>
-            </span>
-            <span className="text-[9px] tracking-[0.4em] uppercase font-bold text-gray-400">
-              SELECTION
-            </span>
-          </div>
+          <img
+            src={COMPANY_INFO.logo}
+            alt={COMPANY_INFO.name}
+            className="h-12 w-auto object-contain"
+          />
         </a>
 
         {/* Desktop Nav */}
