@@ -12,7 +12,7 @@ const Footer: React.FC = () => {
             <img
               src={COMPANY_INFO.logo}
               alt={COMPANY_INFO.name}
-              className="h-16 w-auto object-contain mb-4 mix-blend-screen"
+              className="h-24 w-auto object-contain mb-4 mix-blend-screen"
             />
             <p className="text-gray-400 font-light text-sm">
               {COMPANY_INFO.description}

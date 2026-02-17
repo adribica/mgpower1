@@ -46,7 +46,7 @@ const Header: React.FC = () => {
           <img
             src={COMPANY_INFO.logo}
             alt={COMPANY_INFO.name}
-            className="h-16 md:h-20 w-auto object-contain transition-all duration-300 mix-blend-screen"
+            className="h-24 md:h-32 w-auto object-contain transition-all duration-300 mix-blend-screen"
           />
         </a>
 
