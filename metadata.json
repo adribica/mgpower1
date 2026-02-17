@@ -1,0 +1,8 @@
+{
+  "name": "MG Power - Premium BMW Dealership",
+  "description": "A high-end, institutional web application for MG Power, specializing in premium BMW vehicles with a modern, technological, and luxury aesthetic.",
+  "requestFramePermissions": [
+    "camera",
+    "microphone"
+  ]
+}
