@@ -19,7 +19,7 @@ export const COMPANY_INFO = {
     email: 'contato@mgpowerSelection.com.br',
     instagram: '@mgpowerselection'
   },
-  logo: 'https://s3.bicalhoadslab.digital/calisten/logo%20mgpower.jpg'
+  logo: 'https://s3.bicalhoadslab.digital/calisten/logo%20mgpower%20.jpg'
 };
 
 export const MOCK_CARS: Car[] = [
