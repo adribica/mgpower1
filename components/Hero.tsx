@@ -14,24 +14,24 @@ const Hero: React.FC = () => {
   };
 
   return (
-    <section 
+    <section
       ref={containerRef}
       onMouseMove={handleMouseMove}
       className="relative h-screen w-full flex items-center overflow-hidden bg-mg-black"
     >
       {/* Background Video - BMW em Movimento (Rodas Girando) */}
       <div className="absolute inset-0 z-0 overflow-hidden">
-        <video 
-          autoPlay 
-          loop 
-          muted 
-          playsInline 
+        <video
+          autoPlay
+          loop
+          muted
+          playsInline
           className="w-full h-full object-cover opacity-60 scale-110"
         >
           {/* Link para um vídeo cinematográfico de alta performance */}
-          <source src="https://assets.mixkit.co/videos/preview/mixkit-fast-car-driving-on-a-highway-at-night-42036-large.mp4" type="video/mp4" />
+          <source src="https://s3.bicalhoadslab.site/tybebot/videoback.mp4" type="video/mp4" />
         </video>
-        
+
         {/* Camadas de Contraste para Legibilidade */}
         <div className="absolute inset-0 bg-gradient-to-r from-mg-black via-mg-black/30 to-transparent"></div>
         <div className="absolute inset-0 bg-gradient-to-t from-mg-black via-transparent to-mg-black/20"></div>
@@ -39,9 +39,9 @@ const Hero: React.FC = () => {
       </div>
 
       <div className="container mx-auto px-6 relative z-10">
-        <div 
+        <div
           className="max-w-4xl transition-transform duration-300 ease-out"
-          style={{ 
+          style={{
             transform: `perspective(1000px) rotateY(${mousePos.x * 10}deg) rotateX(${mousePos.y * -5}deg)`,
             transformStyle: 'preserve-3d'
           }}
@@ -55,9 +55,9 @@ const Hero: React.FC = () => {
 
           <h1 className="text-6xl md:text-9xl font-black text-white mb-8 leading-none font-display tracking-tighter">
             MG POWER<br />
-            <span 
-              className="text-transparent italic" 
-              style={{ 
+            <span
+              className="text-transparent italic"
+              style={{
                 WebkitTextStroke: '1.5px rgba(255, 255, 255, 0.9)',
                 textShadow: '0 0 30px rgba(214, 40, 40, 0.4)'
               }}
@@ -67,13 +67,13 @@ const Hero: React.FC = () => {
           </h1>
 
           <p className="text-lg md:text-2xl text-gray-200 mb-12 max-w-2xl font-light leading-relaxed drop-shadow-xl">
-            Sinta a pulsação da engenharia alemã em sua forma mais pura. 
+            Sinta a pulsação da engenharia alemã em sua forma mais pura.
             Curadoria exclusiva de veículos BMW com performance certificada.
           </p>
-          
+
           <div className="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-8">
-            <a 
-              href="#/veiculos" 
+            <a
+              href="#/veiculos"
               className="group relative bg-mg-red text-white px-12 py-5 rounded-sm font-black text-center uppercase tracking-widest transition-all duration-500 shadow-[0_10px_40px_rgba(214,40,40,0.5)] overflow-hidden"
             >
               <span className="relative z-10">Ver Showroom</span>
@@ -83,9 +83,9 @@ const Hero: React.FC = () => {
                 EXPLORAR
               </span>
             </a>
-            
-            <a 
-              href="#/contato" 
+
+            <a
+              href="#/contato"
               className="group border border-white/20 hover:border-mg-red bg-white/5 backdrop-blur-md text-white px-12 py-5 rounded-sm font-black text-center uppercase tracking-widest transition-all duration-300"
             >
               Consultoria VIP
