@@ -62,7 +62,7 @@ const Hero: React.FC = () => {
                 textShadow: '0 0 30px rgba(214, 40, 40, 0.4)'
               }}
             >
-              LEGACY
+              SELECTION
             </span>
           </h1>
 

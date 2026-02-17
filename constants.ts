@@ -66,8 +66,8 @@ export const MOCK_CARS: Car[] = [
     hp: 619,
     description: 'A revolução elétrica encontra o DNA M. O iX M60 oferece um torque instantâneo de 1.100 Nm e uma experiência de luxo sustentável sem precedentes.',
     images: [
-      'https://images.unsplash.com/photo-1668470505963-718f2780650d?q=80&w=1600&auto=format&fit=crop',
-      'https://images.unsplash.com/photo-1678144673238-73599a09804e?q=80&w=1600&auto=format&fit=crop'
+      'https://images.unsplash.com/photo-1655208453472-72c0c7a84ac6?q=80&w=1600&auto=format&fit=crop',
+      'https://images.unsplash.com/photo-1657635292482-1c2551523b03?q=80&w=1600&auto=format&fit=crop'
     ],
     features: [
       'BMW Curved Display',
