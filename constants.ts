@@ -1,6 +1,26 @@
 
 import { Car } from './types';
 
+export const COMPANY_INFO = {
+  name: 'MGPower Selection',
+  description: 'Compra, venda, troca, intermediação e avaliação de veículos BMW e MINI. Carros de procedência.',
+  address: {
+    street: 'Rua José Rodrigues Pereira, 165',
+    complement: 'Loja 110',
+    neighborhood: 'Estoril',
+    city: 'Belo Horizonte',
+    state: 'MG',
+    zip: '30455-640',
+    mapsLink: 'https://maps.google.com/?q=Rua+José+Rodrigues+Pereira+165+Estoril+Belo+Horizonte'
+  },
+  contact: {
+    phone: '(31) 97547-9536',
+    whatsapp: '5531975479536',
+    email: 'contato@mgpowerSelection.com.br',
+    instagram: '@mgpowerselection'
+  }
+};
+
 export const MOCK_CARS: Car[] = [
   {
     id: 'bmw-m3-competition-2024',

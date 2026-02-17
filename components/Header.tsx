@@ -17,7 +17,7 @@ const Header: React.FC = () => {
 
     window.addEventListener('scroll', handleScroll);
     window.addEventListener('hashchange', handleHashChange);
-    
+
     return () => {
       window.removeEventListener('scroll', handleScroll);
       window.removeEventListener('hashchange', handleHashChange);
@@ -33,12 +33,11 @@ const Header: React.FC = () => {
   ];
 
   return (
-    <header 
-      className={`fixed top-0 left-0 w-full z-[1000] transition-all duration-500 ${
-        isScrolled || isMobileMenuOpen 
-          ? 'bg-mg-black/95 backdrop-blur-lg py-4 border-b border-white/5 shadow-2xl' 
+    <header
+      className={`fixed top-0 left-0 w-full z-[1000] transition-all duration-500 ${isScrolled || isMobileMenuOpen
+          ? 'bg-mg-black/95 backdrop-blur-lg py-4 border-b border-white/5 shadow-2xl'
           : 'bg-transparent py-8'
-      }`}
+        }`}
     >
       <div className="container mx-auto px-6 flex items-center justify-between">
         {/* Logo */}
@@ -48,7 +47,7 @@ const Header: React.FC = () => {
               MG<span className="text-mg-red">POWER</span>
             </span>
             <span className="text-[9px] tracking-[0.4em] uppercase font-bold text-gray-400">
-              Boutique Premium
+              SELECTION
             </span>
           </div>
         </a>
@@ -56,12 +55,11 @@ const Header: React.FC = () => {
         {/* Desktop Nav */}
         <nav className="hidden lg:flex items-center space-x-10">
           {navLinks.map((link) => (
-            <a 
-              key={link.name} 
-              href={link.href} 
-              className={`relative text-[10px] font-black uppercase tracking-[0.2em] transition-all duration-300 hover:text-mg-red ${
-                currentHash === link.href ? 'text-mg-red' : 'text-white/80'
-              }`}
+            <a
+              key={link.name}
+              href={link.href}
+              className={`relative text-[10px] font-black uppercase tracking-[0.2em] transition-all duration-300 hover:text-mg-red ${currentHash === link.href ? 'text-mg-red' : 'text-white/80'
+                }`}
             >
               {link.name}
               {currentHash === link.href && (
@@ -69,8 +67,8 @@ const Header: React.FC = () => {
               )}
             </a>
           ))}
-          <a 
-            href="#/veiculos" 
+          <a
+            href="#/veiculos"
             className="bg-mg-red hover:bg-white hover:text-mg-red text-white px-8 py-3 rounded-sm font-black text-[10px] transition-all duration-500 shadow-xl shadow-mg-red/20 uppercase tracking-[0.2em]"
           >
             Showroom
@@ -78,7 +76,7 @@ const Header: React.FC = () => {
         </nav>
 
         {/* Mobile Toggle */}
-        <button 
+        <button
           className="lg:hidden relative z-[1005] p-2 text-white"
           onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
         >
@@ -89,22 +87,20 @@ const Header: React.FC = () => {
       </div>
 
       {/* Mobile Menu - SOLID OVERLAY FIX */}
-      <div className={`lg:hidden fixed inset-0 bg-mg-black z-[1001] transition-all duration-500 ease-in-out flex flex-col items-center justify-center space-y-12 ${
-        isMobileMenuOpen ? 'translate-y-0 opacity-100' : '-translate-y-full opacity-0 pointer-events-none'
-      }`}>
+      <div className={`lg:hidden fixed inset-0 bg-mg-black z-[1001] transition-all duration-500 ease-in-out flex flex-col items-center justify-center space-y-12 ${isMobileMenuOpen ? 'translate-y-0 opacity-100' : '-translate-y-full opacity-0 pointer-events-none'
+        }`}>
         {navLinks.map((link) => (
-          <a 
-            key={link.name} 
-            href={link.href} 
-            className={`text-3xl font-black uppercase tracking-[0.3em] transition-colors ${
-              currentHash === link.href ? 'text-mg-red' : 'text-white'
-            }`}
+          <a
+            key={link.name}
+            href={link.href}
+            className={`text-3xl font-black uppercase tracking-[0.3em] transition-colors ${currentHash === link.href ? 'text-mg-red' : 'text-white'
+              }`}
           >
             {link.name}
           </a>
         ))}
-        <a 
-          href="#/veiculos" 
+        <a
+          href="#/veiculos"
           className="bg-mg-red text-white px-12 py-5 rounded-sm font-black text-sm uppercase tracking-widest shadow-2xl"
         >
           Ver Showroom
