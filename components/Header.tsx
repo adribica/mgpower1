@@ -46,7 +46,7 @@ const Header: React.FC = () => {
           <img
             src={COMPANY_INFO.logo}
             alt={COMPANY_INFO.name}
-            className="h-12 w-auto object-contain"
+            className="h-16 md:h-20 w-auto object-contain transition-all duration-300"
           />
         </a>
 
